@@ -1,13 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web map</title>
+    <title>GGR472 Lab 2 </title>
+    
+    <!-- Mapbox and CSS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Header Section (Always Visible) -->
+    <header class="header">
+        <h1>University of Toronto: Libraries Mapped
+            <div class="header-right">
+                <a href="https://onesearch.library.utoronto.ca/" target="_blank" class="library-btn">Online Library </a>
+            </div>
+    </header>
+
+    <!-- Map Container (Should Not Cover Header) -->
     <div id="my-map" class="map-container"></div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
+</html>

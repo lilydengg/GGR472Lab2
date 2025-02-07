@@ -1,6 +1,56 @@
-.map-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+/* Reset margins and paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling issues */
+}
+
+/* Header Styling */
+.header {
+    background-color: #192c41; /* Bootstrap Primary Blue */
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    }
+    position: center; 
+    z-index: 10;
+}
+
+/* Aligns the button to the right */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+/* Library Online Button */
+.library-btn {
+    background-color: white;
+    color: #283b4e;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    align-items: center;
+    border: 2px solid white;
+    transition: 0.3s;
+    position: absolute;
+    right: 55px/* Positions button to the right */
+}
+
+.library-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Map Container */
+.map-container {
+    width: 100%;
+    height: calc(100vh - 70px); /* Adjusted height so header is always visible */
+    position: relative;
+}
